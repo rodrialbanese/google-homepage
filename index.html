@@ -1,0 +1,98 @@
+<HEAD>
+    <TITLE>Google</TITLE>
+
+</HEAD>
+<BODY>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <main class="main">
+        <nav class="nav">
+            <div class="flex-item">
+                <a class="link1" href="#">Gmail</a>
+            </div>
+            <div class="flex-item">
+                <a class="link1" href="#">Images</a>
+            </div>
+            <div class="flex-item">
+                <a class="link1" href="#">Cuadro</a>
+            </div>
+            <div class="flex-item">
+                <a class="link1" href="#">Avatar</a>
+            </div>
+        </nav>
+        <div class="div-imagen">
+            <img class="imagen" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+
+        <div class="input-box">
+            <img class="lupa" src="lupa.PNG">
+            <input class="search" type="text">
+            <img class="mic" src="microfono.PNG">
+            
+
+        </div>
+    </main>
+
+    <style>
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 43px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .flex-item {
+            padding-left: 10px;
+        }
+        .link1 {
+            color:rgba(0,0,0,0.87);
+            text-decoration: none;
+        }
+        .div-imagen {
+            display: flex;
+            height: 350px;
+            padding-bottom: 25px;
+        }
+        .imagen {
+            align-self: flex-end;
+        }
+        body {
+            color:rgba(0,0,0,0.87);
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 580px;
+            height: 44px;
+            border: 0.1px solid #dfe1e5;
+            border-radius: 24px;
+        }
+        .input-box:hover, .input-box:focus-within {
+            box-shadow: 1px 1px 1px #dfe1e5;
+        }
+        .lupa {
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+        .mic {
+            padding-right: 15px;
+        }
+        .search {
+            width: 85%;
+            justify-self: center;
+            border: none transparent;
+            outline: none;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</BODY>
+
