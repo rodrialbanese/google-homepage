@@ -10,14 +10,14 @@
             <div class="flex-item">
                 <a class="link1" href="#">Gmail</a>
             </div>
-            <div class="flex-item">
+            <div class="flex-item2">
                 <a class="link1" href="#">Images</a>
             </div>
-            <div class="flex-item">
-                <a class="link1" href="#">Cuadro</a>
+            <div class="cuadro">
+                <a href="#"><img src="cuadro.PNG"></a>
             </div>
             <div class="flex-item">
-                <a class="link1" href="#">Avatar</a>
+                <a class="avatar" href="#"><img src="avatar.PNG"></a>
             </div>
         </nav>
         <div class="div-imagen">
@@ -28,25 +28,48 @@
             <img class="lupa" src="lupa.PNG">
             <input class="search" type="text">
             <img class="mic" src="microfono.PNG">
-            
-
         </div>
+
+        <div class="buttons-box">
+            <button class="boton">Google Search</button>
+            <button class="boton">I'm Feeling Lucky</button>
+        </div>
+
+
     </main>
 
     <style>
         .nav {
             display: flex;
             width: 100%;
-            height: 43px;
+            height: 50px;
             justify-content: flex-end;
             align-items: center;
         }
         .flex-item {
             padding-left: 10px;
         }
+        .flex-item2 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         .link1 {
             color:rgba(0,0,0,0.87);
             text-decoration: none;
+        }
+        .link1:hover {
+            text-decoration: underline;
+        }
+        .cuadro {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cuadro:hover{
+            border-radius: 40px;
+            background-color:rgba(221, 219, 219, 0.25);
         }
         .div-imagen {
             display: flex;
@@ -83,9 +106,30 @@
         }
         .search {
             width: 85%;
+            font-size: 16px;
             justify-self: center;
             border: none transparent;
             outline: none;
+        }
+        .buttons-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+        }
+        .boton {
+            background-color: white;
+            border-width: 1px;
+            border-color: transparent;
+            padding: 10px 50px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+        .boton:hover {
+            border: 1px solid #dfe1e5;
+            box-shadow: 0.8px 0.8px 0.8px #dfe1e5;
         }
         .main {
             display: flex;
